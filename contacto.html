@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Vinicius Soares</title>
+<meta name="description" content="Currículo de Vinicius Soares: geógrafo e investigador na Universidade do Porto, com foco em análise espacial e risco de incêndios.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body id="topo">
+<header>
+  <div class="wrap">
+    <a class="marca" href="index.html"><img src="img/foto.png" alt="" width="40" height="40">Vinicius Soares</a>
+    <nav aria-label="Navegação principal">
+      <ul><li><a href="index.html#trabalhos">Trabalhos</a></li><li><a href="experiencia.html">Experiência</a></li><li><a href="competencias.html">Competências</a></li>
+        <li class="mais"><button type="button" aria-haspopup="true">Mais ⌄</button><ul><li><a href="formacao.html">Formação</a></li><li><a href="contacto.html" aria-current="page">Contacto</a></li></ul></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="wrap"><div class="page-intro"><h1>Contacto</h1></div></div>
+<section class="bloco"><div class="wrap duas"><h2>Entre em contato</h2>
+<div><p>Email: <a href="mailto:up202500017@up.pt">up202500017@up.pt</a></p><p>Localização: Porto, Portugal</p></div></div></section>
+<section class="bloco"><div class="wrap"><div class="titulo-sec"><h2>Onde estudo</h2></div><div id="mapa" role="img" aria-label="Mapa da Faculdade de Letras da Universidade do Porto"></div></div></section>
+</main>
+<footer>
+  <p>© 2026 Vinicius Soares. Trabalho de Aplicações de WebSIG no Ordenamento do Território, Mestrado MSIGOT, U.Porto.</p>
+  <a href="#topo">Voltar ao topo ↑</a>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+var map = L.map('mapa').setView([41.1556, -8.6355], 15);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+L.marker([41.1556, -8.6355]).addTo(map)
+  .bindPopup('<b>Universidade do Porto</b><br>Faculdade de Letras (FLUP)').openPopup();
+</script>
+</body>
+</html>

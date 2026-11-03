@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Início | Vinicius Soares</title>
+<meta name="description" content="Currículo de Vinicius Soares: geógrafo e investigador na Universidade do Porto, com foco em análise espacial e risco de incêndios.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body id="topo">
+<header>
+  <div class="wrap">
+    <a class="marca" href="index.html"><img src="img/foto.png" alt="" width="40" height="40">Vinicius Soares</a>
+    <nav aria-label="Navegação principal">
+      <ul><li><a href="index.html#trabalhos">Trabalhos</a></li><li><a href="experiencia.html">Experiência</a></li><li><a href="competencias.html">Competências</a></li>
+        <li class="mais"><button type="button" aria-haspopup="true">Mais ⌄</button><ul><li><a href="formacao.html">Formação</a></li><li><a href="contacto.html">Contacto</a></li></ul></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-topo">
+  <img class="hero-foto" src="img/foto.png" alt="Fotografia de Vinicius Soares" width="130" height="130">
+  <h1>Vinicius Soares</h1>
+</div>
+    <p class="frase">Análise espacial.<br>Gestão de riscos.</p>
+    <p class="bio">Geógrafo e mestrando na Universidade do Porto. Atuo com geodados, modelagem estatística e cartografia aplicados ao risco de incêndios rurais e ao ordenamento do território.</p>
+    <div class="contactos">
+      <a class="cta" href="contacto.html">Entre em contato ↗</a>
+      <span>Porto, Portugal</span>
+      <span>Mestrado MSIGOT · U.Porto</span>
+    </div>
+  </div>
+</section>
+
+<section class="bloco" id="trabalhos">
+  <div class="wrap">
+    <div class="titulo-sec"><h2>Trabalhos selecionados</h2><sup>03</sup></div>
+
+    <article class="trabalho grande">
+      <a class="imagem" href="experiencia.html"><img src="img/ignit.png" alt="Incêndio rural numa encosta, com fumo visível" width="1600" height="700"><span class="num mono">01</span></a>
+      <div class="cab"><h3>IGNIT: Ignição de incêndios rurais</h3><a href="experiencia.html" aria-label="Ver experiência">↗</a></div>
+      <p class="meta mono">Investigador / 2025-12 - atual</p>
+      <div class="corpo">
+        <div>
+          <p>Análise espacial e modelagem estatística sobre as causas de ignição de incêndios rurais, no projeto COMPETE2030-FEDER-00910000 / FCT.</p>
+          <p>Fluxos de geoprocessamento em ArcGIS Pro e QGIS e modelos preditivos para identificar áreas vulneráveis.</p>
+        </div>
+        <div><ul class="tags"><li>ArcGIS Pro</li><li>QGIS</li><li>R</li><li>Python</li><li>SPSS</li></ul></div>
+      </div>
+    </article>
+
+    <div class="par-grelha">
+      <article class="trabalho par">
+        <button type="button" class="imagem abrir-album" aria-label="Abrir o álbum de fotos do Periferia Viva"><img src="img/periferia-viva.jpeg" alt="Equipe do projeto Periferia Viva consultando um mapa de Angra dos Reis em campo" width="800" height="720"><span class="num mono">02</span><span class="contador mono">4 fotos</span></button>
+        <div class="cab"><h3>Periferia Viva - Plano de Redução de Riscos e Desastres</h3><a href="experiencia.html" aria-label="Ver experiência">↗</a></div>
+        <p class="meta mono">Auxiliar de Geoprocessamento / 2024-10 - 2025-10</p>
+        <div class="corpo"><p>Mapas temáticos e polígonos georreferenciados com SIG e drones em Angra dos Reis.</p><p>Cenários de risco de incêndios florestais, erosão e deslizamentos de terra.</p></div>
+        <ul class="tags"><li>SIG</li><li>Drones</li><li>Trabalho de campo</li></ul>
+      </article>
+      <article class="trabalho par">
+        <a class="imagem" href="experiencia.html"><img src="img/reurb-s.png" alt="Ortofoto com lotes e quadras delimitados em vermelho e rosa" width="800" height="720"><span class="num mono">03</span></a>
+        <div class="cab"><h3>REURB-S - Regularização Fundiária Urbana de Interesse Social</h3><a href="experiencia.html" aria-label="Ver experiência">↗</a></div>
+        <p class="meta mono">Técnico em Geodésia e Cartografia / 2023-11 - 2025-10</p>
+        <div class="corpo"><p>Regularização fundiária em todo o estado do Rio de Janeiro: delimitação de polígonos e análise de títulos e certidões.
+        <ul class="tags"><li>QGIS</li><li>PostgreSQL</li><li>Geodésia</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloco">
+  <div class="wrap">
+    <div class="titulo-sec"><h2>Onde trabalhei</h2></div>
+    <div id="mapa" role="img" aria-label="Mapa com Porto, Angra dos Reis e Rio de Janeiro"></div>
+  </div>
+</section>
+</main>
+<footer>
+  <p>© 2026 Vinicius Soares. Trabalho de Aplicações de WebSIG no Ordenamento do Território, Mestrado MSIGOT, U.Porto.</p>
+  <a href="#topo">Voltar ao topo ↑</a>
+</footer>
+<dialog id="album" class="album" aria-label="Álbum de fotos do Periferia Viva">
+  <button type="button" class="fechar" aria-label="Fechar">✕</button>
+  <button type="button" class="nav ant" aria-label="Foto anterior">‹</button>
+  <button type="button" class="nav prox" aria-label="Foto seguinte">›</button>
+  <figure>
+    <img class="album-img" id="album-img" src="" alt="">
+    <figcaption id="album-legenda"></figcaption>
+  </figure>
+  <div class="miniaturas" id="album-miniaturas"></div>
+</dialog>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+var map = L.map('mapa');
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+var locais = [
+  { nome: 'Porto', info: 'Investigador no IGNIT e mestrado MSIGOT', pos: [41.1556, -8.6355] },
+  { nome: 'Angra dos Reis', info: 'Periferia Viva (Fiotec) e Prefeitura', pos: [-23.0067, -44.3181] },
+  { nome: 'Rio de Janeiro', info: 'Projeto REURB-S (Enge Prat)', pos: [-22.9068, -43.1729] }
+];
+var pontos = [];
+locais.forEach(function (l) {
+  L.marker(l.pos).addTo(map).bindPopup('<b>' + l.nome + '</b><br>' + l.info);
+  pontos.push(l.pos);
+});
+map.fitBounds(pontos, { padding: [40, 40] });
+</script>
+<script>
+var fotos = [
+  { src: 'img/periferia-viva.jpeg',   alt: 'Apoio da Defesa Civil na identificação das áreas de risco' },
+  { src: 'img/periferia-viva-2.jpeg', alt: 'Apoio dos líderes comunitários na identificação das áreas de risco' },
+  { src: 'img/periferia-viva-3.jpeg', alt: 'Apoio da Secretaria de Saúde de Angra dos Reis' },
+  { src: 'img/periferia-viva-4.jpeg', alt: 'Equipe em campo' }
+];
+var album = document.getElementById('album');
+var imgAlbum = document.getElementById('album-img');
+var legenda = document.getElementById('album-legenda');
+var miniaturas = document.getElementById('album-miniaturas');
+var atual = 0;
+
+fotos.forEach(function (f, i) {
+  var b = document.createElement('button');
+  b.type = 'button';
+  b.setAttribute('aria-label', 'Ver foto ' + (i + 1));
+  b.innerHTML = '<img src="' + f.src + '" alt="">';
+  b.addEventListener('click', function () { mostrar(i); });
+  miniaturas.appendChild(b);
+});
+
+function mostrar(i) {
+  atual = (i + fotos.length) % fotos.length;
+  imgAlbum.src = fotos[atual].src;
+  imgAlbum.alt = fotos[atual].alt;
+  legenda.textContent = (atual + 1) + ' / ' + fotos.length + ' · ' + fotos[atual].alt;
+  Array.prototype.forEach.call(miniaturas.children, function (b, k) {
+    b.setAttribute('aria-current', k === atual ? 'true' : 'false');
+  });
+}
+
+document.querySelector('.abrir-album').addEventListener('click', function () {
+  mostrar(0);
+  album.showModal();
+});
+album.querySelector('.fechar').addEventListener('click', function () { album.close(); });
+album.querySelector('.ant').addEventListener('click', function () { mostrar(atual - 1); });
+album.querySelector('.prox').addEventListener('click', function () { mostrar(atual + 1); });
+album.addEventListener('click', function (e) { if (e.target === album) album.close(); });
+album.addEventListener('keydown', function (e) {
+  if (e.key === 'ArrowLeft') mostrar(atual - 1);
+  if (e.key === 'ArrowRight') mostrar(atual + 1);
+});
+</script>
+</body>
+</html>
